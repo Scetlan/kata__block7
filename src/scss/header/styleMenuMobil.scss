@@ -1,0 +1,23 @@
+@import './leftPart.scss';
+@import './rightPart.scss';
+
+.menu {
+  margin: 0;
+  padding: 18px 24px;
+  background-color: #fff;
+  @media screen and (min-width: 900px) {
+    display: none;
+    background-color: transparent;
+  }
+}
+
+.menu__mobil {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobil {
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
+}

@@ -1,0 +1,34 @@
+.drop-down__icon_servise {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.drop-down__item--icon {
+  margin-right: 16px;
+}
+
+.drop-down__phone {
+  background-image: url('../img/icon-phone.svg');
+}
+
+.drop-down__message {
+  background-image: url('../img/icon-message.svg');
+}
+
+.drop-down__contact {
+  background-image: url('../img/icon-contact.svg');
+}
+
+.drop-down__connection {
+  display: flex;
+  flex-direction: column;
+}
+
+.drop-down__connection_email {
+  margin-bottom: 12px;
+}
+
+.drop-down__connection_phone {
+  font-weight: bold;
+  font-size: 24px;
+}

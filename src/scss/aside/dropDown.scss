@@ -1,0 +1,32 @@
+@import './footer/footer.scss';
+@import './content.scss';
+@import './language/lang.scss';
+
+
+.drop-down {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  top: 0px;
+  left: 0px;
+  width: 320px;
+  height: 100vh;
+  z-index: 9999;
+  background-color: #fff;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.5),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+}
+
+.drop-down--active {
+  display: flex;
+  transform: translateX(0%);
+}
+
+.drop-down__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px 24px 0px 24px;
+  height: 95%;
+  z-index: 9998;
+}

@@ -1,0 +1,14 @@
+.drop-down__lang {
+  display: flex;
+  margin-top: 40px;
+
+  li {
+    &:not(:last-child) {
+      margin-right: 7px;
+    }
+
+    a:hover {
+      color: #7e7e82;
+    }
+  }
+}

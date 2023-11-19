@@ -1,0 +1,51 @@
+@import './info/info.scss';
+@import './navigation/navigation.scss';
+@import './content/content.scss';
+@import './brand/brand.scss';
+@import './typeTechnique/typeTechnique.scss';
+@import './prices/prices.scss';
+@import '../sidebar/sidebar.scss';
+
+.details {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid #ff3e79;
+  border-radius: 100%;
+}
+
+.more-buttom {
+  display: none;
+  @media screen and (min-width: 700px) {
+    display: flex;
+  }
+}
+
+.more-buttom__svg {
+  @media screen and (min-width: 700px) {
+    margin-right: 9px;
+    transform: rotate(0);
+    transition: transform 0.5s;
+  }
+}
+
+.more-buttom__svg--transform {
+  @media screen and (min-width: 700px) {
+    transform: rotate(180deg);
+    transition: transform 0.5s;
+  }
+}
+
+.title-container{
+  margin: 0;
+  margin-bottom: 16px;
+  background: linear-gradient(to right, #f8f8f8, #ffffff);
+  .title-container__blog {
+    font-size: 16px;
+    font-weight: 400;
+
+    padding: 16px 0;
+    text-transform: uppercase;
+    color: #7e7e82;
+  }
+}

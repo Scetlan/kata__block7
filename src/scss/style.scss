@@ -1,17 +1,94 @@
-$bgColor: #24292e;
-$text: #fff;
+@import './header/styleMenuMobil.scss';
+@import './aside/dropDown.scss';
+@import './main/main.scss';
+@import './footer/footer.scss';
 
 @font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
   font-weight: normal;
-  font-style: italic;
+  font-family: 'TT Lakes';
+  src: local('TT Lakes Regular'), url('../fonts/TTLakes-Regular.woff');
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: 'TT Lakes';
+  src: local('TT Lakes Bold'), url('../fonts/TTLakes-Bold.woff');
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
-  padding: 1rem;
+  min-width: 320px;
+  font-family: 'TT Lakes', sans-serif;
+  font-weight: normal;
+  background-color: #f8f8f8;
+  padding: 0;
   margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  color: #1b1c21;
+
+  @media screen and (min-width: 900px) {
+    max-width: 1120px;
+  }
+  @media screen and (min-width: 1057px) {
+    max-width: 1120px;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  color: #1b1c21;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-color: #ff3e79;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 100%;
+
+  &:hover {
+    background-color: #c02150;
+  }
+}
+
+.aside-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.9605;
+  z-index: 9998;
 }

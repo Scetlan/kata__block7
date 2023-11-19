@@ -1,0 +1,53 @@
+.drop-down__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 46px;
+}
+
+.drop-down__burger-menu_close {
+  background-image: url('../img/icon-close.svg');
+}
+
+.drop-down__logo {
+  margin-left: -40px;
+}
+
+.drop-down__search {
+  background-image: url('../img/icon-search.svg');
+}
+
+.drop-down__item {
+  .item__link {
+    display: block;
+    padding-bottom: 32px;
+    align-items: center;
+    color: #000;
+    transition: color 0.4s ease;
+
+    &:hover {
+      color: #7e7e82;
+    }
+  }
+
+  &::before {
+    content: '';
+    width: 4px;
+    height: 32px;
+    border-left: 4px solid #41f6d7;
+    border-radius: 8px;
+    position: absolute;
+    left: -8px;
+    transform: translateY(-15%) rotate(180deg);
+    transition: left 0.4s ease;
+  }
+
+  &:hover::before {
+    left: -3px;
+  }
+}
+
+.item__link {
+  color: #7e7e82;
+}
