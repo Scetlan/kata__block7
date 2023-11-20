@@ -19,7 +19,6 @@ menuClose.addEventListener('click', () => {
 
 // событие на кнопку 'показать еще'
 const brandItems = document.querySelectorAll('.brand__item');
-const brandBtn = document.querySelector('.more-buttom');
 const brandAll = document.querySelector('.brand__all');
 const brandSvgBtn = document.querySelector('.more-buttom__svg');
 
@@ -38,3 +37,24 @@ brandAll.addEventListener('click', () => {
         brandSvgBtn.classList.remove('more-buttom__svg--transform');
     }
 });
+
+
+//читать еще
+
+const contentButton = document.querySelector('.content__button');
+const buttonText = document.querySelector('.content__button--text');
+const contentText = document.querySelector('.content__text');
+const picSvg = document.querySelector('.pic-svg');
+
+
+contentButton.addEventListener('click', ()=> {
+    contentText.classList.add('content__text--active');
+    picSvg.classList.add('pic-svg--active');
+    if (buttonText.textContent === 'Читать далее') {
+        buttonText.textContent = 'Скрыть';
+    } else {
+        buttonText.textContent = 'Читать далее';
+        contentText.classList.remove('content__text--active');
+        picSvg.classList.remove('pic-svg--active');
+    }
+})

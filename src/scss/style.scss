@@ -35,10 +35,10 @@ h1, h2, h3, h4 {
 .container {
   max-width: 100%;
   margin: 0 auto;
-  color: #1b1c21;
+  padding: 0 16px;
 
   @media screen and (min-width: 900px) {
-    max-width: 1120px;
+    padding: 0 24px;
   }
   @media screen and (min-width: 1057px) {
     max-width: 1120px;
@@ -78,7 +78,10 @@ p {
   border-radius: 100%;
 
   &:hover {
-    background-color: #c02150;
+    background-color: #561e2f;
+  }
+  &:focus {
+    background-color: #561e2f;
   }
 }
 

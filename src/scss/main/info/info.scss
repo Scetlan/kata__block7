@@ -1,8 +1,20 @@
 .main__info {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   height: 78px;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 32px;
+    border-left: 4px solid #41f6d7;
+    border-radius: 8px;
+    left: 0px;
+    top: 27px;
+    transform: translateY(-15%) rotate(180deg);
+  }
 }
 
 .main__title {
@@ -11,18 +23,6 @@
   font-weight: bold;
   font-size: 28px;
   margin: 0;
-
-  svg {
-    position: absolute;
-    top: -8%;
-    left: -6%;
-    @media screen and (min-width: 700px) {
-      left: -10%;
-    }
-    @media screen and (min-width: 900px) {
-      left: -12%;
-    }
-  }
 }
 
 .main__list_desktop {

@@ -18,10 +18,19 @@
   background-image: url('../img/icon-search.svg');
 }
 
+.drop-down__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  margin-bottom: 32px;
+  @media screen and (min-width: 1057px) {
+    row-gap: 32px;
+  }
+}
+
 .drop-down__item {
   .item__link {
     display: block;
-    padding-bottom: 32px;
     align-items: center;
     color: #000;
     transition: color 0.4s ease;
@@ -46,8 +55,4 @@
   &:hover::before {
     left: -3px;
   }
-}
-
-.item__link {
-  color: #7e7e82;
 }

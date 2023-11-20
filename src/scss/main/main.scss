@@ -36,16 +36,40 @@
   }
 }
 
-.title-container{
+.title-container {
   margin: 0;
   margin-bottom: 16px;
   background: linear-gradient(to right, #f8f8f8, #ffffff);
   .title-container__blog {
     font-size: 16px;
     font-weight: 400;
-
-    padding: 16px 0;
+    padding: 16px;
     text-transform: uppercase;
     color: #7e7e82;
+    @media screen and (min-width: 700px) {
+      padding: 16px 24px;
+    }
+  }
+}
+
+section,
+article.content {
+  padding-bottom: 24px;
+  border-bottom: 5px solid #d9fff5;
+  @media screen and (min-width: 700px) {
+    padding-bottom: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 50px;
+  }
+}
+
+section.prices {
+  padding-bottom: 40px;
+  @media screen and (min-width: 700px) {
+    padding-bottom: 47px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 50px;
   }
 }
