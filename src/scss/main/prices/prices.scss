@@ -1,7 +1,3 @@
-.prices {
-  // padding: 50px 0;
-}
-
 .prices__product {
   width: 100%;
   background-color: #fff;
@@ -38,6 +34,14 @@
   }
   span {
     align-items: center;
+  }
+
+  &:hover {
+    background-color: #b64366;
+
+  }
+  &:focus {
+    background-color: #8c2242;
   }
 }
 
@@ -106,9 +110,6 @@ th {
 
 .prices-swiper {
   padding-bottom: 30px;
-}
-
-.prices-swiper--display {
 }
 
 .product-swiper {

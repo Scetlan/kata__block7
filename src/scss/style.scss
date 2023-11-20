@@ -85,7 +85,8 @@ p {
   }
 }
 
-.aside-background {
+.aside-background,
+.menu__aside-background {
   position: fixed;
   top: 0;
   left: 0;
@@ -94,4 +95,9 @@ p {
   background-color: white;
   opacity: 0.9605;
   z-index: 9998;
+}
+
+//удалить
+b {
+  display: contents;
 }

@@ -1,11 +1,9 @@
-.type-technique {
-}
-
 .type-technique__item {
-  @media screen and (min-width: 1057px) {
+  @media screen and (min-width: 700px) {
     display: none;
 
-    &:nth-last-child(n + 2) {
+    &:nth-last-child(n + 3),
+    &.item--avtive {
       display: flex;
     }
   }
@@ -41,6 +39,17 @@
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
+  }
+
+  &:hover{
+    background-color: #ff3e79;
+    color: #ffffff;
+    transition: background-color 0.8s;
+  }
+  &:hover .type-technique__btn{
+    background-color: #fff;
+    border-color: #9b9798;
+    transition: background-color 0.5s, border-color 0.5s;
   }
 }
 

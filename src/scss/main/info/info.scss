@@ -1,3 +1,4 @@
+
 .main__info {
   display: flex;
   position: relative;
@@ -50,6 +51,18 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    &:hover .icon{
+      background-color: #d9527b;
+    }
+    &:focus .icon{
+      background-color: #68162e;
+    }
+    .link__status {
+      background-image: url('../img/icon-status.svg');
+    }
+    .link__request {
+      background-image: url('../img/icon-request.svg');
+    }
   }
 
   .link__span {

@@ -2,8 +2,7 @@
 @import './content.scss';
 @import './language/lang.scss';
 
-
-.drop-down {
+.menu__navigation {
   position: fixed;
   display: none;
   flex-direction: column;
@@ -17,7 +16,7 @@
     -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
 }
 
-.drop-down--active {
+.menu__navigation--active {
   display: flex;
   transform: translateX(0%);
 }
