@@ -17,12 +17,12 @@ footer.footer__container {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  color: #7e7e82;
+  color: $dark-grey;
 
   .footer__info--link {
     font-style: normal;
     font-weight: 500;
-    color: #7e7e82;
+    color: $dark-grey;
   }
 
   @media screen and (min-width: 710px) {
@@ -53,5 +53,11 @@ footer.footer__container {
     column-gap: none;
     flex-direction: row;
     justify-content: space-between;
+  }
+  @media screen and (min-width: 1250px) {
+    padding-left: 270px;
+  }
+  @media screen and (min-width: 1300px) {
+    padding-left: 315px;
   }
 }

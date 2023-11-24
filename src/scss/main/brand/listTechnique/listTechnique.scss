@@ -23,7 +23,7 @@
     align-items: center;
     margin: 0;
     border-radius: 6px;
- 
+
     background: #fff;
     &:nth-last-child(n + 9),
     &.item--avtive {
@@ -52,19 +52,19 @@
   @media screen and (min-width: 730px) {
     padding: 16px;
   }
-  &:hover .details{
-    background-color: #ff3e79;
+  &:hover .details {
+    background-color: $hot-pink;
     transition: background-color 0.5s;
   }
-  &:hover .details svg path{
+  &:hover .details svg path {
     fill: #fff;
     transition: fill 0.5s;
   }
-  &:hover{
+  &:hover {
     border-color: #d45a5a;
     transition: border-color 0.5s;
   }
-  &:focus .details{
+  &:focus .details {
     background-color: #931a3e;
     transition: background-color 0.5s;
   }

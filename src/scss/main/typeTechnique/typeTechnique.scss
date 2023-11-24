@@ -7,6 +7,12 @@
       display: flex;
     }
   }
+  @media screen and (min-width: 1055px) {
+    &:nth-last-child(n + 2),
+    &.item--avtive {
+      display: flex;
+    }
+  }
 }
 
 .type-technique__list {
@@ -16,9 +22,7 @@
   row-gap: 16px;
   margin-bottom: 24px;
   @media screen and (min-width: 700px) {
-    &:nth-last-child(n) {
-      display: grid;
-    }
+    display: grid;
   }
   @media screen and (min-width: 1057px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -32,7 +36,7 @@
   width: 100%;
   height: 160px;
   padding: 16px;
-  background-color: #ffffff;
+  background-color: $white;
 
   span {
     font-size: 16px;
@@ -41,14 +45,14 @@
     line-height: 24px;
   }
 
-  &:hover{
-    background-color: #ff3e79;
-    color: #ffffff;
+  &:hover {
+    background-color: $hot-pink;
+    color: $white;
     transition: background-color 0.8s;
   }
-  &:hover .type-technique__btn{
+  &:hover .type-technique__btn {
     background-color: #fff;
-    border-color: #9b9798;
+    border-color: $ivory;
     transition: background-color 0.5s, border-color 0.5s;
   }
 }

@@ -8,10 +8,17 @@
 
 .drop-down__burger-menu_close {
   background-image: url('../img/icon-close.svg');
+
+  @media screen and (min-width: 1250px) {
+    display: none;
+  }
 }
 
 .drop-down__logo {
   margin-left: -40px;
+  @media screen and (min-width: 1250px) {
+    margin-left: 0px;
+  }
 }
 
 .drop-down__search {
@@ -32,11 +39,11 @@
   .item__link {
     display: block;
     align-items: center;
-    color: #000;
+    color: $black;
     transition: color 0.4s ease;
 
     &:hover {
-      color: #7e7e82;
+      color: $dark-grey;
     }
   }
 

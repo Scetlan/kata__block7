@@ -1,31 +1,25 @@
-.prices__product {
-  width: 100%;
-  background-color: #fff;
-}
-
-.prices__container {
+.prices__table {
   display: none;
   @media screen and (min-width: 700px) {
     display: block;
   }
 }
 
-.prices__table {
-  display: table;
-  width: 100%;
-}
-
+.item__button,
 .button-order {
   display: flex;
-  position: relative;
   padding: 9px 40px 9px 13px;
 
   color: #fff;
-  background-color: #ff3e79;
+  background-color: $hot-pink;
   border-radius: 16px;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
+
+  background-image: url('../img/prices-icon.svg');
+  background-repeat: no-repeat;
+  background-position: bottom 11px right 16px;
 
   text-transform: uppercase;
   svg {
@@ -38,39 +32,53 @@
 
   &:hover {
     background-color: #b64366;
-
   }
   &:focus {
     background-color: #8c2242;
   }
 }
 
-.prices__table,
-.prices__table-title th,
-.prices__product td {
+.item__content {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+
+  padding: 23px 0;
   border-bottom: 1px solid #eaeaea;
   border-collapse: collapse;
 }
 
-.prices__table-title {
-  th {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 16px;
-    color: #7e7e82;
-    background-color: transparent;
-  }
+.item__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-th,
-td {
-  padding: 15px;
-  text-align: left;
+.first-column {
+  width: 400px;
+}
+.second-column,
+.third-column {
+  width: 150px;
 }
 
-th {
-  background-color: #f2f2f2;
+.fourth-column {
+  width: 119px;
+}
+
+.prices__table-content {
+  padding: 0 24px;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.prices__table-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+
+.item__prices-icon {
 }
 
 .prices__offer--desc {
@@ -103,8 +111,12 @@ th {
   margin-top: 16px;
   letter-spacing: -0.2px;
   text-align: left;
+  &:hover svg{
+    transform: translate(5px);
+    transition: transform 0.5s;
+  }
   @media screen and (min-width: 500px) {
-    width: 100%;
+    width: 310px;
   }
 }
 
@@ -126,7 +138,7 @@ th {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  color: #7e7e82;
+  color: $dark-grey;
 }
 
 .swiper-slide__desc {
