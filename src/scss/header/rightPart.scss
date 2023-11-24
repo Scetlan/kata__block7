@@ -1,12 +1,20 @@
 .mobil__right-part-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .mobil__contact {
   display: none;
   @media screen and (min-width: 700px) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -moz-column-gap: 16px;
+    -webkit-column-gap: 16px;
     column-gap: 16px;
   }
 }
@@ -23,12 +31,16 @@
       bottom: 9px;
       width: 2px;
       height: 32px;
-      background: #eaeaea;
+      background: $silver;
     }
   }
 }
 
 .mobil__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -moz-column-gap: 16px;
+  -webkit-column-gap: 16px;
   column-gap: 16px;
 }

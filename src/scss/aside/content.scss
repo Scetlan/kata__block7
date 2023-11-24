@@ -1,8 +1,17 @@
 .drop-down__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 46px;
 }
 
@@ -26,8 +35,13 @@
 }
 
 .drop-down__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   row-gap: 24px;
   margin-bottom: 32px;
   @media screen and (min-width: 1057px) {
@@ -38,8 +52,12 @@
 .drop-down__item {
   .item__link {
     display: block;
-    align-items: center;
-    color: $black;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: $charcoal-black;
+    -webkit-transition: color 0.4s ease;
+    -o-transition: color 0.4s ease;
     transition: color 0.4s ease;
 
     &:hover {
@@ -55,8 +73,12 @@
     border-radius: 8px;
     position: absolute;
     left: -8px;
-    transform: translateY(-15%) rotate(180deg);
-    transition: left 0.4s ease;
+    -webkit-transform: translateY(-15%) rotate(180deg);
+       -ms-transform: translateY(-15%) rotate(180deg);
+           transform: translateY(-15%) rotate(180deg);
+   -webkit-transition: left 0.4s ease;
+   -o-transition: left 0.4s ease;
+   transition: left 0.4s ease;
   }
 
   &:hover::before {

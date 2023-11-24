@@ -1,16 +1,21 @@
 .main__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style-type: none;
   padding: 0;
   margin: 0;
   overflow: auto;
   @media screen and (min-width: 900px) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
   @media screen and (min-width: 1057px) {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 }
@@ -27,7 +32,7 @@
 
 .list__item:hover,
 .active {
-  background: #fff;
+  background: $white;
   border: 2px solid #b8ffec;
   border-radius: 6px;
 }

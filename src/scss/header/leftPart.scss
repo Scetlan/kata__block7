@@ -1,18 +1,19 @@
 .mobil__left-part-menu {
-  display: flex;
-  align-items: center;
-}
-
-.mobil__left-part-menu {
   position: relative;
-
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  align-items: center;
   &:after {
     content: '';
     position: absolute;
     right: 0;
     width: 2px;
     height: 32px;
-    background: #eaeaea;
+    background: $silver;
   }
 
   @media screen and (min-width: 700px) {
@@ -22,7 +23,7 @@
       left: 61px;
       width: 2px;
       height: 32px;
-      background: #eaeaea;
+      background: $silver;
     }
   }
 }

@@ -12,24 +12,35 @@
 
 .drop-down {
   position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
   top: 0px;
   left: 0px;
   width: 320px;
   height: 100%;
   z-index: 9999;
-  background-color: #fff;
+  background-color: $white;
+  -webkit-box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.5), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.5),
     -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
   @media screen and (min-width: 1250px) {
     width: 280px;
     box-shadow: none;
+    -webkit-box-shadow: none;
   }
   @media screen and (min-width: 1300px) {
     width: 320px;
-    box-shadow: none;
+  }
+  @media screen and (min-width: 1880px) {
+    width: 380px;
   }
 }
 
@@ -39,10 +50,17 @@
 }
 
 .drop-down__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100%;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 18px 24px 32px 24px;
   z-index: 9995;
 }

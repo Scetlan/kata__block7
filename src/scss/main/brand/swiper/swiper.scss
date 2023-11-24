@@ -8,11 +8,17 @@
 .swiper-wrapper {
   position: relative;
   width: 100%;
-
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   overflow: visible;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
   transition-property: transform;
-  box-sizing: content-box;
+  transition-property: transform, -webkit-transform;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .swiper-slide {
@@ -20,13 +26,17 @@
   min-height: 72px;
   max-height: 72px;
   border-radius: 6px;
-  border: 1px solid #eaeaea;
-  background: #fff;
+  border: 1px solid $silver;
+  background: $white;
 }
 
 .swiper-slide__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
   padding: 10px;
 }
@@ -47,6 +57,6 @@ div {
   width: 40px;
   height: 40px;
   background-color: transparent;
-  border: 2px solid #ff3e79;
+  border: 2px solid $hot-pink;
   border-radius: 100%;
 }

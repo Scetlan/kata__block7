@@ -9,8 +9,14 @@ footer.footer__container {
 }
 
 .footer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   text-align: center;
 
@@ -44,19 +50,34 @@ footer.footer__container {
 
 .footer__content {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   row-gap: 16px;
   margin: 0 auto;
+
   @media screen and (min-width: 710px) {
     margin: 0;
+    -moz-column-gap: none;
+    -webkit-column-gap: none;
     column-gap: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
+
   @media screen and (min-width: 1250px) {
     padding-left: 270px;
   }
+
   @media screen and (min-width: 1300px) {
     padding-left: 315px;
   }

@@ -4,12 +4,16 @@
 
     &:nth-last-child(n + 3),
     &.item--avtive {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
     }
   }
   @media screen and (min-width: 1055px) {
     &:nth-last-child(n + 2),
     &.item--avtive {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
     }
   }
@@ -17,21 +21,33 @@
 
 .type-technique__list {
   display: none;
+  -ms-grid-columns: 1fr 24px 1fr 24px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 24px;
+  -moz-column-gap: 24px;
+       -webkit-column-gap: 24px;
+          column-gap: 24px;
   row-gap: 16px;
   margin-bottom: 24px;
   @media screen and (min-width: 700px) {
+    display: -ms-grid;
     display: grid;
   }
   @media screen and (min-width: 1057px) {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 .type-technique__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
   height: 160px;
@@ -40,19 +56,24 @@
 
   span {
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: 24px;
+
+    color: $charcoal-black;
   }
 
   &:hover {
     background-color: $hot-pink;
     color: $white;
+    -webkit-transition: background-color 0.8s;
+    -o-transition: background-color 0.8s;
     transition: background-color 0.8s;
   }
   &:hover .type-technique__btn {
-    background-color: #fff;
+    background-color: $white;
     border-color: $ivory;
+    -webkit-transition: background-color 0.5s, border-color 0.5s;
+    -o-transition: background-color 0.5s, border-color 0.5s;
     transition: background-color 0.5s, border-color 0.5s;
   }
 }

@@ -4,7 +4,7 @@
 .menu {
   margin: 0;
   padding: 18px 16px;
-  background-color: #fff;
+  background-color: $white;
   @media screen and (min-width: 700px) {
     padding: 18px 24px;
   }
@@ -15,7 +15,11 @@
 }
 
 .menu__mobil {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 

@@ -3,10 +3,16 @@
     height: 100%;
     margin: 0 auto;
     padding: 0 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+         -ms-flex-pack: justify;
     justify-content: space-between;
   }
   @media screen and (min-width: 900px) {
+    display: -webkit-box;
+     display: -ms-flexbox;
     display: flex;
   }
   @media screen and (min-width: 1057px) {
@@ -30,6 +36,7 @@
 }
 
 .content__desc {
+  -o-text-overflow: clip;
   text-overflow: clip;
 }
 
@@ -37,6 +44,7 @@
   width: 100%;
   height: auto;
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
   @media screen and (min-width: 700px) {
     width: 50%;
@@ -44,14 +52,19 @@
 }
 
 .content__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 90px;
   font-size: 14px;
   line-height: 20px;
 
+  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   margin-bottom: 16px;
   overflow: hidden;
+
+  color: $charcoal-black;
   @media (min-width: 416px) and (max-width: 692px) {
     font-size: 16px;
     height: 59px;
@@ -65,6 +78,7 @@
 
   @media screen and (min-width: 900px) {
     overflow: hidden;
+    -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     margin-bottom: 14px;
   }
@@ -80,7 +94,11 @@
 }
 
 .content__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 0;
   line-height: 24px;
@@ -88,10 +106,16 @@
 
 .pic-svg {
   margin-right: 8px;
+  -webkit-transform: rotate(0);
+       -ms-transform: rotate(0);
+  -webkit-transition: -webkit-transform 0.5s;
   transform: rotate(0);
-  transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;;
 }
 
 .pic-svg.pic-svg--active {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }

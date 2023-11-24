@@ -10,7 +10,7 @@
   width: 40px;
   height: 40px;
   background-color: transparent;
-  border: 2px solid #ff3e79;
+  border: 2px solid $hot-pink;
   border-radius: 100%;
 }
 
@@ -18,6 +18,8 @@
 .type-technique__button {
   display: none;
   @media screen and (min-width: 700px) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -26,22 +28,36 @@
 .type-technique__pic {
   @media screen and (min-width: 700px) {
     margin-right: 9px;
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
     transform: rotate(0);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
     transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
   }
 }
 
 .button-svg--transform {
   @media screen and (min-width: 700px) {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
     transform: rotate(180deg);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
     transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
   }
 }
 
 .title-container {
   margin: 0;
   margin-bottom: 16px;
-  background: linear-gradient(to right, #f8f8f8, #ffffff);
+  background: -webkit-gradient(linear, left top, right top, from($snow-white), to($white));
+  background: -o-linear-gradient(left, $snow-white, $white);
+  background: linear-gradient(to right, $snow-white, $white);
   .title-container__blog {
     font-size: 16px;
     font-weight: 400;
@@ -57,7 +73,7 @@
 section,
 article.content {
   padding-bottom: 24px;
-  border-bottom: 1px solid #d9fff5;
+  border-bottom: 1px solid $light-green;
   @media screen and (min-width: 700px) {
     padding-bottom: 32px;
   }
