@@ -774,8 +774,8 @@ div.swiper-horizontal > .swiper-scrollbar, div.swiper-scrollbar.swiper-scrollbar
   bottom: 16px; }
 
 .aside-background {
-  display: none;
   position: fixed;
+  display: none;
   top: 0;
   left: 0;
   width: 100%;
