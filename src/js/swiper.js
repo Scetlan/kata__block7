@@ -1,4 +1,9 @@
+import Swiper from "swiper";
+import { Pagination } from "swiper/modules";
+import "swiper/swiper-bundle.min.css";
+
 const swiper = new Swiper('.swiper', {
+    modules: [Pagination],
     direction: 'horizontal',
     loop: true,
 
@@ -7,11 +12,6 @@ const swiper = new Swiper('.swiper', {
         dynamicBullets: true,
         dynamicMainBullets: 7,
         clickable: true,
-    },
-
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
     },
 
     breakpoints: {

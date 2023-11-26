@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
+    /> -->
     <link rel="shortcut icon" href="./img/Group.svg" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>CPS</title>
@@ -1254,7 +1254,7 @@
           </ul>
         </div>
         <div class="swiper prices-swiper container">
-          <ul class="swiper-wrapper">
+          <ul class="swiper-wrapper swiper__list-prices">
             <li class="swiper-slide product-swiper">
                 <div class="swiper-slide__content">
                   <h3 class="swiper-slide__title">Ремонтные услуги</h3>
@@ -1389,18 +1389,11 @@
         <form class="sidebar__form">
           <h2 class="sidebar__title title">Обратная связь</h2>
           <div class="sidebar__form-container">
-              <div class="sidebar__field field-text">
-                  <input class="field-primary" type="text" id="name" placeholder="Имя" />
-              </div>
-              <div class="sidebar__field field-tel">
-                  <input class="field-primary" type="tel" id="tel" placeholder="Телефон" />
-              </div>
-              <div class="sidebar__field field-email">
-                  <input class="field-primary" type="email" id="email" placeholder="Электронная почта" />
-              </div>
-              <div class="sidebar__field field-message">
-                  <textarea class="field-primary" id="message" name="message" placeholder="Сообщение"></textarea>
-              </div>
+              <input class="field-primary" type="text" id="name" placeholder="Имя" />
+              <input class="field-primary" type="tel" id="tel" placeholder="Телефон" />
+              <input class="field-primary" type="email" id="email" placeholder="Электронная почта" />
+              <textarea class="field-primary" id="message" name="message" placeholder="Сообщение"></textarea>
+          </div>
               <p class="typeparagraph">Нажимая “отправить”, вы даете согласие на 
                   <a class="typeparagraph__link" href="#">обработку персональных данных</a> 
                   и соглашаетесь с нашей
@@ -1434,6 +1427,6 @@
     </div>
     </footer>
   </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js "></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js "></script> -->
   </body>
 </html>
