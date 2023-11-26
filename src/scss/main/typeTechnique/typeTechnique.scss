@@ -76,6 +76,10 @@
     -o-transition: background-color 0.5s, border-color 0.5s;
     transition: background-color 0.5s, border-color 0.5s;
   }
+
+  &:hover span{
+    color: $white;
+  }
 }
 
 .type-technique__btn {
@@ -84,7 +88,8 @@
   margin-right: 0;
 }
 
-.swiper__technique--type {
-  height: 180px;
-  padding-bottom: 14px;
+.swiper.type-technique__swiper {
+  @media screen and (min-width: 700px) {
+    display: none;
+  }
 }

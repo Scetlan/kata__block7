@@ -5,6 +5,12 @@
   }
 }
 
+.swiper.prices-swiper {
+  @media screen and (min-width: 700px) {
+    display: none;
+  }
+}
+
 .item__button,
 .button-order {
   display: -webkit-box;
@@ -182,6 +188,12 @@ ul.swiper-wrapper.swiper__list-prices {
   font-style: normal;
   font-weight: 500;
   color: $dark-grey;
+}
+
+.swiper-slide.product-swiper {
+  display: flex;
+  flex-direction: column;
+  column-gap: 16px;
 }
 
 .swiper-slide__desc {
