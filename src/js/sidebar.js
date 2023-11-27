@@ -23,6 +23,7 @@ phoneBtn.forEach((btn) => {
 })
 
 sidebarClose.addEventListener('click', () => {
+   console.log('yf;fkf');
    sidebar.classList.remove('sidebar--active');
    asideBackground.classList.remove('aside-background--active');
 });

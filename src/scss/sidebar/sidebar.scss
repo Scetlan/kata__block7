@@ -26,6 +26,7 @@
   height: 100%;
   top: 0;
   right: 0;
+  padding: 104px 0px;
   min-width: 320px;
   -webkit-box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
     -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
@@ -51,7 +52,7 @@
 
 .sidebar__form {
   position: relative;
-  padding: 104px 16px;
+  padding: 0px 16px;
 
   @media screen and (min-width: 560px) {
     padding: 40px 32px;
