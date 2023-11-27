@@ -867,7 +867,8 @@ div.swiper-horizontal > .swiper-scrollbar, div.swiper-scrollbar.swiper-scrollbar
   z-index: 9999; }
   @media screen and (min-width: 560px) {
     .sidebar__content {
-      width: 440px; } }
+      width: 440px;
+      padding: 40px 0px; } }
 
 .sidebar__button-close {
   position: absolute;
@@ -884,7 +885,7 @@ div.swiper-horizontal > .swiper-scrollbar, div.swiper-scrollbar.swiper-scrollbar
   padding: 0px 16px; }
   @media screen and (min-width: 560px) {
     .sidebar__form {
-      padding: 40px 32px; } }
+      padding: 0px 32px; } }
   .sidebar__form .sidebar__title {
     margin: 0;
     margin-bottom: 24px;
