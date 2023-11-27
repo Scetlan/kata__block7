@@ -87,14 +87,20 @@ a,
 button {
   font-family: inherit; }
 
-ul.swiper-wrapper::after,
-.main__list::after {
+.type-technique__content {
+  position: relative; }
+
+.brand__content {
+  position: relative; }
+
+.type-technique__content::before,
+.main__navigation::before,
+.brand__content::before {
   content: '';
   height: 100%;
   width: 24px;
   position: absolute;
   right: 0;
-  bottom: -200;
   z-index: 1000;
   background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0) 100%); }
 
@@ -221,26 +227,27 @@ ul.swiper-wrapper::after,
     .drop-down__list {
       row-gap: 32px; } }
 
-.drop-down__item .item__link {
-  display: block;
-  align-items: center;
-  color: #1b1c21;
-  transition: color 0.4s ease; }
-  .drop-down__item .item__link:hover {
-    color: #7e7e82; }
-
-.drop-down__item::before {
-  content: '';
-  height: 30px;
-  border-left: 4px solid #41f6d7;
-  border-radius: 8px;
-  position: absolute;
-  left: 0px;
-  opacity: 0;
-  transition: opacity 0.4s ease; }
-
-.drop-down__item:hover::before, .drop-down__item:focus::before, .drop-down__item:active::before {
-  opacity: 1; }
+.drop-down__item {
+  position: relative; }
+  .drop-down__item .item__link {
+    display: block;
+    align-items: center;
+    color: #1b1c21;
+    transition: color 0.4s ease; }
+    .drop-down__item .item__link:hover {
+      color: #7e7e82; }
+  .drop-down__item::before {
+    content: '';
+    height: 30px;
+    border-left: 4px solid #41f6d7;
+    border-radius: 0 8px 8px 0;
+    position: absolute;
+    left: -24px;
+    top: -4px;
+    opacity: 0;
+    transition: opacity 0.4s ease; }
+  .drop-down__item:hover::before, .drop-down__item:focus::before, .drop-down__item:active::before {
+    opacity: 1; }
 
 .drop-down__lang {
   display: flex;
@@ -288,8 +295,8 @@ ul.swiper-wrapper::after,
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
-  padding: 18px 24px 32px 24px;
-  z-index: 9995; }
+  z-index: 9995;
+  padding: 18px 24px 32px 24px; }
 
 .menu__aside-background {
   display: none;
@@ -316,7 +323,7 @@ ul.swiper-wrapper::after,
     position: absolute;
     height: 32px;
     border-left: 4px solid #41f6d7;
-    border-radius: 8px;
+    border-radius: 0 8px 8px 0;
     left: 0px;
     top: 23px; }
 
@@ -360,6 +367,7 @@ ul.swiper-wrapper::after,
     background-image: url(./static/icon-request.svg); } }
 
 .main__list {
+  position: relative;
   display: flex;
   list-style-type: none;
   padding: 0;
@@ -378,6 +386,7 @@ ul.swiper-wrapper::after,
       flex-wrap: wrap; } }
 
 nav.main__navigation {
+  position: relative;
   padding: 0; }
 
 .main__list::-webkit-scrollbar {
@@ -515,19 +524,16 @@ ul.swiper__technique--type.swiper-wrapper {
   border: 1px solid #eaeaea;
   background: #fff;
   padding: 10px; }
+  .swiper-slide__link .swiper-slide__btn--details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
 
 div.swiper-button-next:after, div.swiper-button-prev:after {
   content: none; }
 
 div.swiper-horizontal > .swiper-scrollbar, div.swiper-scrollbar.swiper-scrollbar-horizontal {
   height: 0; }
-
-.details {
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  border: 2px solid #ff3e79;
-  border-radius: 100%; }
 
 .brand__list-technique {
   display: none; }
@@ -855,14 +861,12 @@ div.swiper-horizontal > .swiper-scrollbar, div.swiper-scrollbar.swiper-scrollbar
   top: 0;
   right: 0;
   min-width: 320px;
-  padding: 104px 16px;
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
   background-color: #fff;
   z-index: 9999; }
   @media screen and (min-width: 560px) {
     .sidebar__content {
-      width: 440px;
-      padding: 40px 32px; } }
+      width: 440px; } }
 
 .sidebar__button-close {
   position: absolute;
@@ -874,40 +878,50 @@ div.swiper-horizontal > .swiper-scrollbar, div.swiper-scrollbar.swiper-scrollbar
       top: 30px;
       left: -65px; } }
 
-.sidebar__form .sidebar__title {
-  margin: 0;
-  margin-bottom: 24px;
-  color: #1b1c21;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 32px;
-  letter-spacing: -0.6px; }
-
-.sidebar__form .sidebar__form-container {
-  display: flex;
+.sidebar__form {
   position: relative;
-  flex-direction: column;
-  row-gap: 16px;
-  padding-bottom: 16px; }
-  .sidebar__form .sidebar__form-container #message {
-    height: 118px; }
-  .sidebar__form .sidebar__form-container .field-primary {
-    width: 100%;
-    height: 48px;
-    flex-shrink: 0;
-    padding: 12px 16px;
-    border-radius: 8px;
-    border: 1px solid #eaeaea;
-    color: #eaeaea;
-    background-color: #fff; }
-  .sidebar__form .sidebar__form-container .sidebar__message {
-    max-width: 136px;
-    margin: 0 auto;
-    margin-right: 0; }
-    .sidebar__form .sidebar__form-container .sidebar__message .sidebar__message--svg {
-      width: 7px;
-      height: 9.633px; }
+  padding: 104px 16px; }
+  @media screen and (min-width: 560px) {
+    .sidebar__form {
+      padding: 40px 32px; } }
+  .sidebar__form .sidebar__title {
+    margin: 0;
+    margin-bottom: 24px;
+    color: #1b1c21;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.6px; }
+    .sidebar__form .sidebar__title::before {
+      content: '';
+      position: absolute;
+      height: 32px;
+      border-left: 4px solid #41f6d7;
+      border-radius: 0 8px 8px 0;
+      left: 0px; }
+  .sidebar__form .sidebar__form-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    row-gap: 16px;
+    padding-bottom: 16px; }
+    .sidebar__form .sidebar__form-container #message {
+      height: 118px; }
+    .sidebar__form .sidebar__form-container .field-primary {
+      width: 100%;
+      height: 48px;
+      flex-shrink: 0;
+      padding: 12px 16px;
+      border-radius: 8px;
+      border: 1px solid #eaeaea;
+      color: #eaeaea;
+      background-color: #fff; }
+
+button.sidebar__message {
+  max-width: 136px;
+  margin: 0 auto;
+  margin-right: 0; }
 
 .typeparagraph {
   padding: 0;
@@ -921,11 +935,16 @@ div.swiper-horizontal > .swiper-scrollbar, div.swiper-scrollbar.swiper-scrollbar
     color: #ff3e79; }
 
 .details {
+  position: relative;
   width: 40px;
   height: 40px;
   background-color: transparent;
   border: 2px solid #ff3e79;
   border-radius: 100%; }
+  .details svg {
+    position: absolute;
+    top: 12px;
+    left: 15px; }
 
 .more-button,
 .type-technique__button {
