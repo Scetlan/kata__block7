@@ -707,7 +707,7 @@ div.swiper-horizontal > .swiper-scrollbar, div.swiper-scrollbar.swiper-scrollbar
   font-weight: 700;
   background-image: url(./static/prices-icon.svg);
   background-repeat: no-repeat;
-  background-position: bottom 11px right 16px;
+  background-position: bottom 12px right 16px;
   text-transform: uppercase; }
   .item__button svg,
   .button-order svg {
