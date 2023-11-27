@@ -20,7 +20,7 @@ h4 {
 }
 
 .container {
-  max-width: 100%;
+  max-width: 1660px;
   margin: 0 auto;
   padding: 0 16px;
 
@@ -78,9 +78,6 @@ p {
 
 .main {
   @media screen and (min-width: 1250px) {
-    padding-left: 280px;
-  }
-  @media screen and (min-width: 1300px) {
-    padding-left: 320px;
+    padding-left: 350px;
   }
 }

@@ -7,41 +7,23 @@
   -ms-flex-align: center;
   align-items: center;
   align-items: center;
-  &:after {
-    content: '';
-    position: absolute;
-    right: 0;
-    width: 2px;
-    height: 32px;
-    background: $silver;
-  }
-
-  @media screen and (min-width: 700px) {
-    &:after {
-      content: '';
-      position: absolute;
-      left: 61px;
-      width: 2px;
-      height: 32px;
-      background: $silver;
-    }
-  }
-}
-
-.mobil__burger-menu,
-.mobil__logo {
-  margin-right: 17px;
+  column-gap: 16px;
 }
 
 .mobil__burger-menu {
+  position: relative;
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-column-gap: 16px;
+    -webkit-column-gap: 16px;
+    column-gap: 16px;
   @media screen and (min-width: 700px) {
-    margin-right: 42px;
-  }
-}
-
-.mobil__logo {
-  @media screen and (min-width: 700px) {
-    margin-right: 0px;
-    margin: 0;
+    &::after {
+      content: '';
+      width: 2px;
+      height: 40px;
+      background: $silver;
+    }
   }
 }

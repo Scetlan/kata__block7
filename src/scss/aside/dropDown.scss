@@ -32,15 +32,10 @@
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.5),
     -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
   @media screen and (min-width: 1250px) {
-    width: 280px;
+    min-width: 320px;
+    width: calc(100% - 76.5%);
     box-shadow: none;
     -webkit-box-shadow: none;
-  }
-  @media screen and (min-width: 1300px) {
-    width: 320px;
-  }
-  @media screen and (min-width: 1880px) {
-    width: 380px;
   }
 }
 

@@ -25,15 +25,6 @@ ul.swiper__technique--type.swiper-wrapper {
   height: 200px;
 }
 
-.swiper-slide {
-  min-width: 224px;
-  min-height: 72px;
-  max-height: 72px;
-  border-radius: 6px;
-  border: 1px solid $silver;
-  background: $white;
-}
-
 .swiper-slide__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,6 +33,12 @@ ul.swiper__technique--type.swiper-wrapper {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  min-width: 224px;
+  min-height: 72px;
+  max-height: 72px;
+  border-radius: 6px;
+  border: 1px solid $silver;
+  background: $white;
   padding: 10px;
 }
 

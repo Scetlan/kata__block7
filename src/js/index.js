@@ -15,7 +15,13 @@ burgerMenu.addEventListener('click', () => {
 menuClose.addEventListener('click', () => {
   dropDown.classList.remove('menu__aside-menu--active');
   asideBackground.classList.remove('menu__aside-background--active');
-})
+});
+
+asideBackground.addEventListener('click', () => {
+  dropDown.classList.remove('menu__aside-menu--active');
+  asideBackground.classList.remove('menu__aside-background--active');
+});
+
 
 // событие на кнопку 'показать еще' #1
 const brandItems = document.querySelectorAll('.brand__item');

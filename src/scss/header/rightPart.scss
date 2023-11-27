@@ -5,6 +5,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  column-gap: 20px;
 }
 
 .mobil__contact {
@@ -16,21 +17,11 @@
     -moz-column-gap: 16px;
     -webkit-column-gap: 16px;
     column-gap: 16px;
-  }
-}
 
-.mobil__service {
-  @media screen and (min-width: 700px) {
-    position: relative;
-    margin-left: 42px;
-
-    &:after {
+    &::after {
       content: '';
-      position: absolute;
-      left: -33px;
-      bottom: 9px;
       width: 2px;
-      height: 32px;
+      height: 40px;
       background: $silver;
     }
   }
@@ -43,4 +34,5 @@
   -moz-column-gap: 16px;
   -webkit-column-gap: 16px;
   column-gap: 16px;
+  justify-content: center;
 }

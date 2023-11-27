@@ -13,15 +13,11 @@
   &::before {
     content: '';
     position: absolute;
-    width: 4px;
     height: 32px;
     border-left: 4px solid #41f6d7;
     border-radius: 8px;
     left: 0px;
-    top: 27px;
-    -webkit-transform: translateY(-15%) rotate(180deg);
-    -ms-transform: translateY(-15%) rotate(180deg);
-    transform: translateY(-15%) rotate(180deg);
+    top: 23px;
   }
 }
 
