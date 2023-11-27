@@ -90,17 +90,26 @@ button {
   font-family: inherit;
 }
 
+.type-technique__content {
+  position: relative;
+}
 
-ul.swiper-wrapper,
-.main__list {
-  &::after {
-    content: '';
-    height: 100%;
-    width: 24px;
-    position: absolute;
-    right: 0;
-    bottom: -200;
-    z-index: 1000;
-    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.00) 100%);
-  }
+.brand__content {
+  position: relative;
+}
+
+.type-technique__content::before,
+.main__navigation::before,
+.brand__content::before {
+  content: '';
+  height: 100%;
+  width: 24px;
+  position: absolute;
+  right: 0;
+  z-index: 1000;
+  background: linear-gradient(
+    270deg,
+    #F8F8F8 16.84%,
+    rgba(248, 248, 248, 0) 100%
+  );
 }

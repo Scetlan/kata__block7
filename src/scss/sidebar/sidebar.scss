@@ -27,7 +27,6 @@
   top: 0;
   right: 0;
   min-width: 320px;
-  padding: 104px 16px;
   -webkit-box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
     -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
@@ -36,7 +35,6 @@
   z-index: 9999;
   @media screen and (min-width: 560px) {
     width: 440px;
-    padding: 40px 32px;
   }
 }
 
@@ -52,6 +50,12 @@
 }
 
 .sidebar__form {
+  position: relative;
+  padding: 104px 16px;
+
+  @media screen and (min-width: 560px) {
+    padding: 40px 32px;
+  }
   .sidebar__title {
     margin: 0;
     margin-bottom: 24px;
@@ -61,6 +65,15 @@
     font-weight: 700;
     line-height: 32px;
     letter-spacing: -0.6px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 32px;
+      border-left: 4px solid #41f6d7;
+      border-radius: 0 8px 8px 0;
+      left: 0px;
+    }
   }
 
   .sidebar__form-container {
@@ -91,16 +104,13 @@
       color: $silver;
       background-color: $white;
     }
-    .sidebar__message {
-      max-width: 136px;
-      margin: 0 auto;
-      margin-right: 0;
-      .sidebar__message--svg {
-        width: 7px;
-        height: 9.633px;
-      }
-    }
   }
+}
+
+button.sidebar__message {
+  max-width: 136px;
+  margin: 0 auto;
+  margin-right: 0;
 }
 
 .typeparagraph {

@@ -50,6 +50,7 @@
 }
 
 .drop-down__item {
+  position: relative;
   .item__link {
     display: block;
     -webkit-box-align: center;
@@ -69,9 +70,10 @@
     content: '';
     height: 30px;
     border-left: 4px solid #41f6d7;
-    border-radius: 8px;
+    border-radius: 0 8px 8px 0;
     position: absolute;
-    left: 0px;
+    left: -24px;
+    top: -4px;
     opacity: 0;
     transition: opacity 0.4s ease;
   }
