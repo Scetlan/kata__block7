@@ -103,6 +103,11 @@ button {
   right: 0;
   z-index: 1000;
   background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0) 100%); }
+  @media screen and (min-width: 700px) {
+    .type-technique__content::before,
+    .main__navigation::before,
+    .brand__content::before {
+      display: none; } }
 
 .mobil__left-part-menu {
   position: relative;
