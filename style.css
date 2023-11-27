@@ -81,7 +81,10 @@ p {
     padding-left: 320px; } }
 
 input,
-textarea {
+textarea,
+span,
+a,
+button {
   font-family: inherit; }
 
 ul.swiper-wrapper::after,
@@ -242,9 +245,11 @@ ul.swiper-wrapper::after,
 .drop-down__lang {
   display: flex;
   margin-top: 40px; }
-  .drop-down__lang li:not(:last-child) {
+  .drop-down__lang .drop-down__item--text:not(:last-child) {
     margin-right: 7px; }
-  .drop-down__lang li a:hover {
+  .drop-down__lang .drop-down__item--text .drop-down__link--active {
+    color: #7e7e82; }
+  .drop-down__lang .drop-down__item--text .drop-down__link:hover {
     color: #7e7e82; }
 
 .menu__aside-menu {
