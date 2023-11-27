@@ -18,11 +18,15 @@ ul.swiper-wrapper {
   transition-property: transform;
   transition-property: transform, -webkit-transform;
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 ul.swiper__technique--type.swiper-wrapper {
   height: 200px;
+}
+
+ul.swiper__technique--type {
+  
 }
 
 .swiper-slide__link {
@@ -30,8 +34,8 @@ ul.swiper__technique--type.swiper-wrapper {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   position: relative;
   min-width: 224px;
   min-height: 72px;

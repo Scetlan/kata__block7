@@ -67,20 +67,19 @@
 
   &::before {
     content: '';
-    height: 32px;
+    height: 30px;
     border-left: 4px solid #41f6d7;
     border-radius: 8px;
     position: absolute;
-    left: -4px;
-    -webkit-transform: rotate(180deg);
-       -ms-transform: rotate(180deg);
-           transform: rotate(180deg);
-   -webkit-transition: left 0.4s ease;
-   -o-transition: left 0.4s ease;
-   transition: left 0.4s ease;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
   }
 
-  &:hover::before {
-    left: 0px;
+  &:hover::before,
+  &:focus::before,
+  &:active::before {
+    opacity: 1;
   }
+
 }

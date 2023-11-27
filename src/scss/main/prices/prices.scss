@@ -6,9 +6,11 @@
 }
 
 .swiper.prices-swiper {
+  padding-bottom: 35px;
   @media screen and (min-width: 700px) {
     display: none;
   }
+  
 }
 
 .item__button,
@@ -166,14 +168,6 @@
   color: $dark-grey;
 }
 
-.prices-swiper {
-  padding-bottom: 30px;
-}
-
-ul.swiper-wrapper.swiper__list-prices {
-  height: 235px;
-}
-
 .product-swiper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,6 +181,7 @@ ul.swiper-wrapper.swiper__list-prices {
   min-height: 200px;
 
   padding: 16px;
+  background: #FFF;
 }
 
 .swiper-slide__title {
