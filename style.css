@@ -78,7 +78,22 @@ p {
 
 @media screen and (min-width: 1250px) {
   .main {
-    padding-left: 350px; } }
+    padding-left: 320px; } }
+
+input,
+textarea {
+  font-family: inherit; }
+
+ul.swiper-wrapper::after,
+.main__list::after {
+  content: '';
+  height: 100%;
+  width: 24px;
+  position: absolute;
+  right: 0;
+  bottom: -200;
+  z-index: 1000;
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0) 100%); }
 
 .mobil__left-part-menu {
   position: relative;
@@ -213,16 +228,16 @@ p {
 
 .drop-down__item::before {
   content: '';
-  height: 32px;
+  height: 30px;
   border-left: 4px solid #41f6d7;
   border-radius: 8px;
   position: absolute;
-  left: -4px;
-  transform: rotate(180deg);
-  transition: left 0.4s ease; }
+  left: 0px;
+  opacity: 0;
+  transition: opacity 0.4s ease; }
 
-.drop-down__item:hover::before {
-  left: 0px; }
+.drop-down__item:hover::before, .drop-down__item:focus::before, .drop-down__item:active::before {
+  opacity: 1; }
 
 .drop-down__lang {
   display: flex;
@@ -253,10 +268,11 @@ p {
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.5), -2px 0px 4px 0px rgba(69, 79, 126, 0.02); }
   @media screen and (min-width: 1250px) {
     .drop-down {
-      min-width: 320px;
-      width: calc(100% - 76.5%);
       box-shadow: none;
       -webkit-box-shadow: none; } }
+  @media screen and (min-width: 1440px) {
+    .drop-down {
+      left: calc((100% - 1120px - 320px) / 2); } }
 
 .menu__aside-menu--active {
   display: block;
@@ -342,6 +358,7 @@ p {
   display: flex;
   list-style-type: none;
   padding: 0;
+  padding-left: 16px;
   margin: 0;
   overflow: auto; }
   @media screen and (min-width: 900px) {
@@ -349,6 +366,7 @@ p {
       display: flex;
       list-style-type: none;
       padding: 0;
+      padding-left: 24px;
       margin: 0; } }
   @media screen and (min-width: 1057px) {
     .main__list {
@@ -584,9 +602,11 @@ div.swiper-horizontal > .swiper-scrollbar, div.swiper-scrollbar.swiper-scrollbar
     max-width: 128px;
     max-height: 32px; } }
 
-@media screen and (min-width: 700px) {
-  .swiper.brand__container--swiper {
-    display: none; } }
+.swiper.brand__container--swiper {
+  padding-left: 16px; }
+  @media screen and (min-width: 700px) {
+    .swiper.brand__container--swiper {
+      display: none; } }
 
 @media screen and (min-width: 700px) {
   .type-technique__item {
@@ -646,9 +666,11 @@ div.swiper-horizontal > .swiper-scrollbar, div.swiper-scrollbar.swiper-scrollbar
   margin-bottom: 0;
   margin-right: 0; }
 
-@media screen and (min-width: 700px) {
-  .swiper.type-technique__swiper {
-    display: none; } }
+.swiper.type-technique__swiper {
+  padding-left: 16px; }
+  @media screen and (min-width: 700px) {
+    .swiper.type-technique__swiper {
+      display: none; } }
 
 .prices__table {
   display: none; }
@@ -656,9 +678,11 @@ div.swiper-horizontal > .swiper-scrollbar, div.swiper-scrollbar.swiper-scrollbar
     .prices__table {
       display: block; } }
 
-@media screen and (min-width: 700px) {
-  .swiper.prices-swiper {
-    display: none; } }
+.swiper.prices-swiper {
+  padding-bottom: 35px; }
+  @media screen and (min-width: 700px) {
+    .swiper.prices-swiper {
+      display: none; } }
 
 .item__button,
 .button-order {
@@ -768,19 +792,14 @@ div.swiper-horizontal > .swiper-scrollbar, div.swiper-scrollbar.swiper-scrollbar
   line-height: 16px;
   color: #7e7e82; }
 
-.prices-swiper {
-  padding-bottom: 30px; }
-
-ul.swiper-wrapper.swiper__list-prices {
-  height: 235px; }
-
 .product-swiper {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
   position: relative;
   min-height: 200px;
-  padding: 16px; }
+  padding: 16px;
+  background: #FFF; }
 
 .swiper-slide__title {
   font-size: 14px;
@@ -878,7 +897,9 @@ ul.swiper-wrapper.swiper__list-prices {
     color: #eaeaea;
     background-color: #fff; }
   .sidebar__form .sidebar__form-container .sidebar__message {
-    max-width: 136px; }
+    max-width: 136px;
+    margin: 0 auto;
+    margin-right: 0; }
     .sidebar__form .sidebar__form-container .sidebar__message .sidebar__message--svg {
       width: 7px;
       height: 9.633px; }
@@ -1005,12 +1026,6 @@ footer.footer__container {
       column-gap: none;
       flex-direction: row;
       justify-content: space-between; } }
-  @media screen and (min-width: 1250px) {
-    .footer__content {
-      padding-left: 270px; } }
-  @media screen and (min-width: 1300px) {
-    .footer__content {
-      padding-left: 315px; } }
 
 /**
  * Swiper 11.0.5
