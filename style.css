@@ -515,11 +515,12 @@ nav.main__navigation {
 .content__button {
   display: flex;
   align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
   padding: 0;
   line-height: 24px; }
 
 .pic-svg {
-  margin-right: 8px;
   -webkit-transform: rotate(0);
   -ms-transform: rotate(0);
   -webkit-transition: -webkit-transform 0.5s;
@@ -614,6 +615,7 @@ div.swiper-horizontal > .swiper-scrollbar, div.swiper-scrollbar.swiper-scrollbar
 .brand__link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border: 1px solid #eaeaea; }
   @media screen and (min-width: 700px) {
     .brand__link {
@@ -776,24 +778,30 @@ div.swiper-horizontal > .swiper-scrollbar, div.swiper-scrollbar.swiper-scrollbar
   display: flex;
   justify-content: space-between;
   -moz-column-gap: 20px;
-  column-gap: 20px;
+  column-gap: 10px;
   padding: 23px 0;
   border-collapse: collapse; }
 
 .item__desc {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   color: #1b1c21; }
 
 .first-column {
-  width: 400px; }
+  width: 305px; }
+  @media screen and (min-width: 765px) {
+    .first-column {
+      min-width: 348px; } }
 
-.second-column,
 .third-column {
-  width: 150px; }
+  width: 81px; }
+
+.second-column {
+  width: 74px; }
 
 .fourth-column {
   width: 119px; }
@@ -806,6 +814,8 @@ div.swiper-horizontal > .swiper-scrollbar, div.swiper-scrollbar.swiper-scrollbar
 .prices__table-list {
   display: flex;
   justify-content: space-between;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
   padding: 16px 24px; }
 
 .prices__offer--desc {
@@ -998,7 +1008,10 @@ button.sidebar__message {
 
 .more-button,
 .type-technique__button {
-  display: none; }
+  display: none;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px; }
   @media screen and (min-width: 700px) {
     .more-button,
     .type-technique__button {
@@ -1007,7 +1020,6 @@ button.sidebar__message {
 @media screen and (min-width: 700px) {
   .more-button__svg,
   .type-technique__pic {
-    margin-right: 9px;
     transform: rotate(0);
     transition: transform 0.5s; } }
 
