@@ -25,9 +25,6 @@
     display: none;
     position: relative;
     min-height: 72px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -37,18 +34,16 @@
     margin: 0;
     border-radius: 6px;
     background: $white;
-    &:nth-last-child(n + 9),
+    &:nth-last-child(n + 14),
     &.item--avtive {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
     }
   }
-  @media screen and (min-width: 700px) {
-    display: none;
-  }
+
   @media screen and (min-width: 1120px) {
-    &:nth-last-child(n + 7) {
+    &:nth-last-child(n + 12) {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -103,6 +98,12 @@
     -webkit-transition: border-color 0.5s;
     -o-transition: border-color 0.5s;
     transition: background-color 0.5s;
+  }
+
+  .brand__link--img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
