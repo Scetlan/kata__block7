@@ -79,4 +79,7 @@
 
 .menu__aside-background--active {
   display: block;
+  @media screen and (min-width: 1250px) {
+    display: none;
+  }
 }
