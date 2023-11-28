@@ -81,7 +81,7 @@
   justify-content: space-between;
   -moz-column-gap: 20px;
   -webkit-column-gap: 20px;
-  column-gap: 20px;
+  column-gap: 10px;
 
   padding: 23px 0;
   border-collapse: collapse;
@@ -92,6 +92,7 @@
   display: -ms-flexbox;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 
   font-size: 14px;
   font-weight: 400;
@@ -101,11 +102,18 @@
 }
 
 .first-column {
-  width: 400px;
+  width: 305px;
+  @media screen and (min-width: 765px) {
+    min-width: 348px;
+  }
 }
-.second-column,
+
 .third-column {
-  width: 150px;
+  width: 81px;
+}
+
+.second-column {
+  width: 74px;
 }
 
 .fourth-column {
@@ -123,6 +131,7 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  column-gap: 10px;
   padding: 16px 24px;
 }
 

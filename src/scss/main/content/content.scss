@@ -100,12 +100,12 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  column-gap: 5px;
   padding: 0;
   line-height: 24px;
 }
 
 .pic-svg {
-  margin-right: 8px;
   -webkit-transform: rotate(0);
        -ms-transform: rotate(0);
   -webkit-transition: -webkit-transform 0.5s;
