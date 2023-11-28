@@ -570,21 +570,16 @@ div.swiper-horizontal > .swiper-scrollbar, div.swiper-scrollbar.swiper-scrollbar
     display: none;
     position: relative;
     min-height: 72px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
     border-radius: 6px;
     background: #fff; }
-    .brand__item:nth-last-child(n + 9), .brand__item.item--avtive {
+    .brand__item:nth-last-child(n + 14), .brand__item.item--avtive {
       display: flex; } }
 
-@media screen and (min-width: 700px) {
-  .brand__item {
-    display: none; } }
-
 @media screen and (min-width: 1120px) {
-  .brand__item:nth-last-child(n + 7) {
+  .brand__item:nth-last-child(n + 12) {
     display: flex; } }
 
 .brand__all,
@@ -618,6 +613,10 @@ div.swiper-horizontal > .swiper-scrollbar, div.swiper-scrollbar.swiper-scrollbar
   .brand__link:focus .details {
     background-color: #931a3e;
     transition: background-color 0.5s; }
+  .brand__link .brand__link--img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
 
 @media screen and (min-width: 700px) {
   .brand-logo {
@@ -794,6 +793,7 @@ div.swiper-horizontal > .swiper-scrollbar, div.swiper-scrollbar.swiper-scrollbar
 
 .prices__offer--btn {
   width: 192px;
+  text-align: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -806,7 +806,9 @@ div.swiper-horizontal > .swiper-scrollbar, div.swiper-scrollbar.swiper-scrollbar
     transition: transform 0.5s; }
   @media screen and (min-width: 500px) {
     .prices__offer--btn {
-      width: 310px; } }
+      width: 320px; } }
+  .prices__offer--btn svg {
+    margin-left: 3px; }
 
 .prices__item-title {
   font-size: 14px;
