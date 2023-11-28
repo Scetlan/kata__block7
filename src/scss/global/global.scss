@@ -116,3 +116,13 @@ button {
     display: none;
   }
 }
+
+.main__navigation::before {
+  @media screen and (min-width: 700px) {
+    display: block;
+  }
+  
+  @media screen and (min-width: 1057px) {
+    display: none;
+  }
+}

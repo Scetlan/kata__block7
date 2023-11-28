@@ -7,10 +7,27 @@
 
 .swiper.prices-swiper {
   padding-bottom: 35px;
+  padding-left: 16px;
   @media screen and (min-width: 700px) {
     display: none;
   }
-  
+
+  &::before {
+    content: '';
+    height: 100%;
+    width: 24px;
+    position: absolute;
+    right: 0;
+    z-index: 1000;
+    background: linear-gradient(
+      270deg,
+      $snow-white 16.84%,
+      rgba(248, 248, 248, 0) 100%
+    );
+    @media screen and (min-width: 700px) {
+      display: none;
+    }
+  }
 }
 
 .item__button,
@@ -74,13 +91,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  align-items: center;
 
   font-size: 14px;
   font-weight: 400;
@@ -123,15 +134,15 @@
   line-height: 20px;
   letter-spacing: 0.2px;
 
-  margin-top: 16px;
+  padding-top: 16px;
   color: $charcoal-black;
 
   @media screen and (min-width: 700px) {
-    margin-top: 24px;
+    padding-top: 24px;
   }
 
   @media screen and (min-width: 1057px) {
-    margin-top: 32px;
+    padding-top: 32px;
   }
 }
 
@@ -186,7 +197,7 @@
   min-height: 200px;
 
   padding: 16px;
-  background: #FFF;
+  background: #fff;
 }
 
 .swiper-slide__title {

@@ -25,11 +25,8 @@ ul.swiper__technique--type.swiper-wrapper {
   height: 200px;
 }
 
-ul.swiper__technique--type {
-  
-}
-
 .swiper-slide__link {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,8 +44,7 @@ ul.swiper__technique--type {
 
   .swiper-slide__btn--details {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-self: center;
   }
 }
 

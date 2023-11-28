@@ -2,18 +2,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  column-gap: 8px;
   margin-top: 40px;
+}
 
-  .drop-down__item--text {
-    &:not(:last-child) {
-      margin-right: 7px;
-    }
-    .drop-down__link--active {
-      color: $dark-grey;
-    }
+.drop-down__link:hover {
+  color: $dark-grey;
+}
 
-    .drop-down__link:hover {
-      color: $dark-grey;
-    }
-  }
+.drop-down__link--active {
+  color: $dark-grey;
 }
