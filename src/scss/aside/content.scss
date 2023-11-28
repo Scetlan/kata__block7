@@ -65,6 +65,20 @@
       color: $dark-grey;
     }
   }
+  .item__link--active {
+    color: $dark-grey;
+    &::before {
+      content: '';
+      height: 30px;
+      border-left: 4px solid #41f6d7;
+      border-radius: 0 8px 8px 0;
+      position: absolute;
+      left: -24px;
+      top: -4px;
+      opacity: 1;
+      transition: opacity 0.4s ease;
+    }
+  }
 
   &::before {
     content: '';
